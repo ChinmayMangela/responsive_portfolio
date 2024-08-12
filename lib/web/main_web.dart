@@ -9,7 +9,11 @@ class MainWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: webAppBar(context),
-      body: WebHomePage(),
+      body: ListView(
+        children: const [
+          WebHomePage(),
+        ],
+      )
     );
   }
 }
