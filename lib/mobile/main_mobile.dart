@@ -20,6 +20,9 @@ class MainMobile extends StatelessWidget {
               dividerPadding: 40,
             ),
             MobileProjectsPage(),
+            CustomDivider(
+              dividerPadding: 40,
+            ),
           ],
         ),
       )

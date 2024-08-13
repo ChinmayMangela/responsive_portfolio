@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ross_portfolio/features/home/presentation/web_home_page.dart';
+import 'package:ross_portfolio/features/projects/presentation/web_projects_page.dart';
+import 'package:ross_portfolio/shared/widgets/custom_divider.dart';
 import 'package:ross_portfolio/shared/widgets/web_app_bar.dart';
 
 class MainWeb extends StatelessWidget {
@@ -9,10 +11,15 @@ class MainWeb extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: webAppBar(context),
-      body: ListView(
-        children: const [
-          WebHomePage(),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 60),
+        child: ListView(
+          children: const [
+            WebHomePage(),
+            CustomDivider(dividerPadding: 60),
+            WebProjectsPage(),
+          ],
+        ),
       )
     );
   }

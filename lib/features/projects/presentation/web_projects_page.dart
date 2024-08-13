@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ross_portfolio/features/projects/data/project_data.dart';
-import 'package:ross_portfolio/features/projects/widgets/mobile_project_card.dart';
+import 'package:ross_portfolio/features/projects/widgets/web_project_card.dart';
 
-class MobileProjectsPage extends StatelessWidget {
-  const MobileProjectsPage({super.key});
+class WebProjectsPage extends StatelessWidget {
+  const WebProjectsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +15,8 @@ class MobileProjectsPage extends StatelessWidget {
           'FEATURED PROJECTS',
           style: GoogleFonts.oswald(
             fontSize: 30,
-                color: Theme.of(context).colorScheme.primary,
-              ),
+            color: Theme.of(context).colorScheme.primary,
+          ),
         ),
         const SizedBox(height: 20),
         Text(
@@ -27,7 +27,9 @@ class MobileProjectsPage extends StatelessWidget {
         ),
         const SizedBox(height: 60),
         for(final project in projects)
-          MobileProjectCard(project: project),
+          WebProjectCard(project: project),
+        const SizedBox(height: 60),
+
       ],
     );
   }

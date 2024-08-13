@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../constants/string_constants.dart';
+import 'package:ross_portfolio/constants/string_constants.dart';
 
 class AppBarTitle extends StatelessWidget {
   const AppBarTitle({super.key});
