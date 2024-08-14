@@ -26,10 +26,12 @@ class WebProjectsPage extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 60),
-        for(final project in projects)
-          WebProjectCard(project: project),
-        const SizedBox(height: 60),
-
+        ...projects.map((project) =>
+            Padding(
+              padding: const EdgeInsets.only(bottom: 80),
+              child: WebProjectCard(project: project),
+            )
+        )
       ],
     );
   }

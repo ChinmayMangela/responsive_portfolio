@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/features/about/presentation/mobile_about_page.dart';
 import 'package:ross_portfolio/features/home/presentation/mobile_home_page.dart';
 import 'package:ross_portfolio/features/projects/presentation/mobile_projects_page.dart';
 import 'package:ross_portfolio/shared/widgets/custom_divider.dart';
@@ -17,12 +18,15 @@ class MainMobile extends StatelessWidget {
           children: const [
             MobileHomePage(),
             CustomDivider(
-              dividerPadding: 40,
+              topPadding: 60,
+              bottomPadding: 60,
             ),
             MobileProjectsPage(),
             CustomDivider(
-              dividerPadding: 40,
+              topPadding: 0,
+              bottomPadding: 60,
             ),
+            MobileAboutPage(),
           ],
         ),
       )

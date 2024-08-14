@@ -32,26 +32,28 @@ class ProjectContent extends StatelessWidget {
         if (project.client != null)
           _buildInfoRow('Client', project.client!, context),
         const CustomDivider(
-          dividerPadding: 13,
+          topPadding: 13,
+          bottomPadding: 13,
         ),
         _buildInfoRow('Year', project.year, context),
         const CustomDivider(
-          dividerPadding: 13,
+          topPadding: 13,
+          bottomPadding: 13,
         ),
         _buildInfoRow('Role', project.roleInProject, context),
         const CustomDivider(
-          dividerPadding: 13,
+          topPadding: 13,
+          bottomPadding: 13,
         ),
         const SizedBox(height: 13),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Expanded(child: ExternalLinkButton(text: 'LIVE DEMO', icon: Icons.arrow_forward, onPressed: () {},)),
+            ExternalLinkButton(text: 'LIVE DEMO', icon: Icons.arrow_forward, onPressed: () {},),
             const SizedBox(width: 20),
-            Expanded(child: ExternalLinkButton(text: 'SEE ON GITHUB', icon: FontAwesomeIcons.github, onPressed: () {},)),
+            ExternalLinkButton(text: 'SEE ON GITHUB', icon: FontAwesomeIcons.github, onPressed: () {},),
           ],
         ),
-        const SizedBox(height: 120),
       ],
     );
   }

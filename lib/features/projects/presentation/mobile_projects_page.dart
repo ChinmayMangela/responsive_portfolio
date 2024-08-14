@@ -14,7 +14,7 @@ class MobileProjectsPage extends StatelessWidget {
         Text(
           'FEATURED PROJECTS',
           style: GoogleFonts.oswald(
-            fontSize: 30,
+            fontSize: 40,
                 color: Theme.of(context).colorScheme.primary,
               ),
         ),
@@ -26,8 +26,12 @@ class MobileProjectsPage extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 60),
-        for(final project in projects)
-          MobileProjectCard(project: project),
+        ...projects.map((project) {
+          return Padding(
+            padding: const EdgeInsets.only(bottom: 80),
+            child: MobileProjectCard(project: project),
+          );
+        })
       ],
     );
   }

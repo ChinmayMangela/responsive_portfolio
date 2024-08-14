@@ -31,13 +31,13 @@ class MyIntro extends StatelessWidget {
         const SizedBox(height: 10),
         _buildDescription(context),
         const SizedBox(height: 20),
-        const Row(
+        Row(
           children: [
-            ContactMeButton(),
-            SizedBox(width: 10),
-            SocialButton(icon: FontAwesomeIcons.linkedin),
-            SizedBox(width: 10),
-            SocialButton(icon: FontAwesomeIcons.github)
+            const ContactMeButton(),
+            const SizedBox(width: 10),
+            SocialButton(icon: FontAwesomeIcons.linkedin, onPressed: () {},),
+            const SizedBox(width: 10),
+            SocialButton(icon: FontAwesomeIcons.github, onPressed: () {},)
           ],
         )
       ],
