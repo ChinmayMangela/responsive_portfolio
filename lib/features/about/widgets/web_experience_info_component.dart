@@ -19,16 +19,20 @@ class WebExperienceInfoComponent extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(
-              experience.position,
-              style: textTheme.headlineSmall!.copyWith(
-                color: colorScheme.primary,
+            Expanded(
+              child: Text(
+                experience.position,
+                style: textTheme.headlineSmall!.copyWith(
+                  color: colorScheme.primary,
+                ),
               ),
             ),
-            Text(
-              experience.duration,
-              style: textTheme.bodyLarge!.copyWith(
-                color: colorScheme.secondary,
+            Expanded(
+              child: Text(
+                experience.duration,
+                style: textTheme.bodyLarge!.copyWith(
+                  color: colorScheme.secondary,
+                ),
               ),
             ),
           ],
