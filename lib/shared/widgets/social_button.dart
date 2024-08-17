@@ -15,6 +15,7 @@ class SocialButton extends StatelessWidget {
     return InkWell(
       onTap: onPressed,
       child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 7),
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           shape: BoxShape.circle,

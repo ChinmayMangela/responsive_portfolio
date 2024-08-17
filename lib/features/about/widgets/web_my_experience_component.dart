@@ -25,7 +25,7 @@ class WebMyExperienceComponent extends StatelessWidget {
           child: Column(
             children: experienceList.map((experience) {
               return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 20.0),
+                padding: const EdgeInsets.symmetric(vertical: 30.0),
                 child: WebExperienceInfoComponent(experience: experience),
               );
             }).toList(),

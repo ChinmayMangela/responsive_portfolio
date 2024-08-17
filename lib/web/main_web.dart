@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ross_portfolio/features/about/presentation/web_about_page.dart';
+import 'package:ross_portfolio/features/contact/presentation/web_contact_page.dart';
 import 'package:ross_portfolio/features/home/presentation/web_home_page.dart';
 import 'package:ross_portfolio/features/projects/presentation/web_projects_page.dart';
 import 'package:ross_portfolio/shared/widgets/custom_divider.dart';
@@ -27,9 +28,14 @@ class MainWeb extends StatelessWidget {
               bottomPadding: 100,
             ),
             WebAboutPage(),
+            CustomDivider(
+              topPadding: 100,
+              bottomPadding: 100,
+            ),
+            WebContactPage(),
           ],
         ),
-      )
+      ),
     );
   }
 }

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ross_portfolio/features/about/widgets/my_capability_cards.dart';
-import 'package:ross_portfolio/features/about/widgets/my_capabilities_description.dart';
 import 'package:ross_portfolio/features/about/widgets/my_skill_info.dart';
 import 'package:ross_portfolio/features/about/widgets/picture_container.dart';
 import 'package:ross_portfolio/features/about/widgets/web_my_experience_component.dart';
@@ -15,8 +13,11 @@ class WebAboutPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Expanded(
               child: Text(

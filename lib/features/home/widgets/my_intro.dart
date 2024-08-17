@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ross_portfolio/constants/string_constants.dart';
 import 'package:ross_portfolio/features/home/widgets/contact_me_button.dart';
-import 'package:ross_portfolio/features/home/widgets/social_button.dart';
+import 'package:ross_portfolio/shared/widgets/social_button.dart';
 
 class MyIntro extends StatelessWidget {
   const MyIntro({super.key});
@@ -34,9 +34,7 @@ class MyIntro extends StatelessWidget {
         Row(
           children: [
             const ContactMeButton(),
-            const SizedBox(width: 10),
             SocialButton(icon: FontAwesomeIcons.linkedin, onPressed: () {},),
-            const SizedBox(width: 10),
             SocialButton(icon: FontAwesomeIcons.github, onPressed: () {},)
           ],
         )

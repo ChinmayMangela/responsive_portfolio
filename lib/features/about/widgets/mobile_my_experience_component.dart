@@ -10,12 +10,15 @@ class MobileMyExperienceComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Text('MY EXPERIENCE',
-        style: GoogleFonts.oswald(
-          fontSize: 40,
-          color: Colors.white,
-        ),),
+        Text(
+          'MY EXPERIENCE',
+          style: GoogleFonts.oswald(
+            fontSize: 40,
+            color: Colors.white,
+          ),
+        ),
         const SizedBox(height: 20),
         ...experienceList.map((experience) {
           return Padding(

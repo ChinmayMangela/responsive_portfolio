@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ross_portfolio/features/about/widgets/resume_button.dart';
-import 'package:ross_portfolio/features/home/widgets/social_button.dart';
+import 'package:ross_portfolio/shared/widgets/social_button.dart';
 
 class ButtonsRow extends StatelessWidget {
   const ButtonsRow({super.key});
