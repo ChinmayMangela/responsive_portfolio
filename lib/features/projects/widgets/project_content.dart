@@ -46,13 +46,24 @@ class ProjectContent extends StatelessWidget {
           bottomPadding: 13,
         ),
         const SizedBox(height: 13),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            ExternalLinkButton(text: 'LIVE DEMO', icon: Icons.arrow_forward, onPressed: () {},),
-            const SizedBox(width: 20),
-            ExternalLinkButton(text: 'SEE ON GITHUB', icon: FontAwesomeIcons.github, onPressed: () {},),
-          ],
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              ExternalLinkButton(
+                text: 'LIVE DEMO',
+                icon: Icons.arrow_forward,
+                onPressed: () {},
+              ),
+              const SizedBox(width: 20),
+              ExternalLinkButton(
+                text: 'SEE ON GITHUB',
+                icon: FontAwesomeIcons.github,
+                onPressed: () {},
+              ),
+            ],
+          ),
         ),
       ],
     );

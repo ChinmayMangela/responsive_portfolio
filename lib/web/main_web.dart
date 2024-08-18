@@ -33,6 +33,7 @@ class MainWeb extends StatelessWidget {
               bottomPadding: 100,
             ),
             WebContactPage(),
+            SizedBox(height: 50),
           ],
         ),
       ),

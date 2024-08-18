@@ -5,7 +5,9 @@ AppBar webAppBar(BuildContext context) {
   return AppBar(
     title: const AppBarTitle(),
     actions: [
-      TextButton(onPressed: () {}, child: _buildText('Work', context)),
+      TextButton(onPressed: () {
+
+      }, child: _buildText('Work', context)),
       TextButton(onPressed: () {}, child: _buildText('About', context)),
       TextButton(onPressed: () {}, child: _buildText('Contact', context))
     ],

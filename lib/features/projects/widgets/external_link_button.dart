@@ -35,10 +35,6 @@ class ExternalLinkButton extends StatelessWidget {
             ],
           ),
           const SizedBox(width: 10),
-          Divider(
-            thickness: 1.4,
-            color: colorScheme.primaryContainer,
-          ),
         ],
       ),
     );

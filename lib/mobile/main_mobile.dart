@@ -33,6 +33,7 @@ class MainMobile extends StatelessWidget {
                 bottomPadding: 60,
               ),
               MobileContactPage(),
+              SizedBox(height: 50),
             ],
           ),
         ));
