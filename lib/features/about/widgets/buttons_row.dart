@@ -13,7 +13,7 @@ class ButtonsRow extends StatelessWidget {
         children: [
           ResumeButton(onPressed: () {}),
           const SizedBox(width: 10),
-          linkedButton(),
+          linkedInButton(),
           const SizedBox(width: 10),
           githubButton(),
         ],

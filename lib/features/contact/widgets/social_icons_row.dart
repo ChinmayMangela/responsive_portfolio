@@ -8,7 +8,7 @@ class SocialIconsRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        linkedButton(),
+        linkedInButton(),
         githubButton(),
         twitterButton(),
         instagramButton(),

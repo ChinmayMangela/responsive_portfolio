@@ -8,7 +8,7 @@ class SocialButton extends StatelessWidget {
   });
 
   final IconData icon;
-  final void Function() onPressed;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {

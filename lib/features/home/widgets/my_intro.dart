@@ -33,7 +33,7 @@ class MyIntro extends StatelessWidget {
         Row(
           children: [
             const ContactMeButton(),
-            linkedButton(),
+            linkedInButton(),
             githubButton(),
           ],
         )

@@ -5,11 +5,5 @@ AppBar mobileAppBar(BuildContext context) {
   return AppBar(
     centerTitle: false,
     title: const AppBarTitle(),
-    actions: [
-      IconButton(
-        onPressed: () {},
-        icon: const Icon(Icons.horizontal_split),
-      )
-    ],
   );
 }

@@ -3,43 +3,58 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ross_portfolio/shared/widgets/social_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-Widget linkedButton() {
-  final linkedInUrl = Uri.parse('https://www.linkedin.com/in/chinmaymangela/');
+Widget linkedInButton() {
+  const linkedInUrl = 'https://www.linkedin.com/in/chinmaymangela/';
   return SocialButton(
     icon: FontAwesomeIcons.linkedin,
     onPressed: () async {
-      if (await canLaunchUrl(linkedInUrl)) {
-        launchUrl(linkedInUrl);
-      } else {
-        throw Exception('Could not launch $linkedInUrl');
+      final uri = Uri.parse(linkedInUrl);
+      try {
+        if (await canLaunchUrl(uri)) {
+          launchUrl(uri);
+        } else {
+          throw Exception('Could not launch $linkedInUrl');
+        }
+      } catch(e) {
+        print('Error launching URL: $e');
       }
     },
   );
 }
 
 Widget githubButton() {
-  final githubUrl = Uri.parse('https://github.com/ChinmayMangela');
+  const  githubUrl = 'https://github.com/ChinmayMangela';
   return SocialButton(
     icon: FontAwesomeIcons.github,
     onPressed: () async {
-      if(await canLaunchUrl(githubUrl)) {
-        launchUrl(githubUrl);
-      } else {
-        throw Exception('Could not launch $githubUrl');
+      final uri = Uri.parse(githubUrl);
+      try {
+        if(await canLaunchUrl(uri)) {
+          launchUrl(uri);
+        } else {
+          throw Exception('Could not launch $githubUrl');
+        }
+      } catch(e) {
+        print('Error launching URL: $e');
       }
     },
   );
 }
 
 Widget instagramButton() {
-  final instagramUrl = Uri.parse('https://www.instagram.com/___monty28/');
+  const instagramUrl = 'https://www.instagram.com/___monty28/';
   return SocialButton(
     icon: FontAwesomeIcons.instagram,
     onPressed: () async {
-      if(await canLaunchUrl(instagramUrl)) {
-        launchUrl(instagramUrl);
-      } else {
-        throw Exception('Could not launch $instagramUrl');
+      final uri = Uri.parse(instagramUrl);
+      try {
+        if(await canLaunchUrl(uri)) {
+          launchUrl(uri);
+        } else {
+          throw Exception('Could not launch $instagramUrl');
+        }
+      } catch(e) {
+        print('Error launching URL: $e');
       }
     },
   );
