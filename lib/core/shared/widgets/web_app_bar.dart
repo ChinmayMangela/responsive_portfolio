@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ross_portfolio/shared/widgets/app_bar_title.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
+
+import 'app_bar_title.dart';
 
 AppBar webAppBar(BuildContext context) {
   return AppBar(
@@ -17,9 +19,7 @@ AppBar webAppBar(BuildContext context) {
   Widget _buildText(String text, BuildContext context) {
     return Text(
       text,
-      style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-        color: Theme.of(context).colorScheme.primary,
-      ),
+      style: TextThemes(context).bodyMedium
     );
   }
 

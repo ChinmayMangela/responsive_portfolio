@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ross_portfolio/features/about/widgets/resume_button.dart';
-import 'package:ross_portfolio/shared/widgets/social_buttons.dart';
+
+import '../../../core/shared/widgets/social_buttons.dart';
 
 class ButtonsRow extends StatelessWidget {
   const ButtonsRow({super.key});

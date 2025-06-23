@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/constants/string_constants.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -6,7 +7,6 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Theme.of(context).colorScheme.secondaryContainer,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 40.0),
         child: Column(
@@ -18,7 +18,7 @@ class MyDrawer extends StatelessWidget {
 
                   ),
                   const SizedBox(width: 20,),
-                  Text('Ross', style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                  Text(name, style: Theme.of(context).textTheme.headlineSmall!.copyWith(
                     color: Theme.of(context).colorScheme.secondary,
                   ),),
                 ],

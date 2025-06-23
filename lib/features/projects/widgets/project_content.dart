@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ross_portfolio/features/projects/models/project.dart';
 import 'package:ross_portfolio/features/projects/widgets/external_link_button.dart';
-import 'package:ross_portfolio/shared/widgets/custom_divider.dart';
+
+import '../../../core/shared/widgets/custom_divider.dart';
 
 class ProjectContent extends StatelessWidget {
   const ProjectContent({

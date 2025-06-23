@@ -4,7 +4,8 @@ import 'package:ross_portfolio/features/about/widgets/my_skill_info.dart';
 import 'package:ross_portfolio/features/about/widgets/picture_container.dart';
 import 'package:ross_portfolio/features/about/widgets/web_my_experience_component.dart';
 import 'package:ross_portfolio/features/about/widgets/web_skill_showcase_component.dart';
-import 'package:ross_portfolio/shared/widgets/custom_divider.dart';
+
+import '../../../core/shared/widgets/custom_divider.dart';
 
 class WebAboutPage extends StatelessWidget {
   const WebAboutPage({super.key});

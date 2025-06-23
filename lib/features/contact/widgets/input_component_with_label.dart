@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ross_portfolio/shared/widgets/custom_textfield.dart';
+import '../../../core/shared/widgets/custom_textfield.dart';
 
 class InputComponentWithLabel extends StatelessWidget {
   const InputComponentWithLabel({

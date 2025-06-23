@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:ross_portfolio/constants/string_constants.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
+import '../../constants/string_constants.dart';
 
 class AppBarTitle extends StatelessWidget {
   const AppBarTitle({super.key});
@@ -9,9 +9,9 @@ class AppBarTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       name,
-      style: GoogleFonts.oswald(
-        color: Theme.of(context).colorScheme.primary,
-      ),
+      style: TextThemes(context).headlineSmall.copyWith(
+        fontWeight: TextWeights.weight700
+      )
     );
   }
 }
