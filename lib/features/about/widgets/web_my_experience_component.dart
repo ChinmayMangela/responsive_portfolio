@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:ross_portfolio/features/about/data/experience_data.dart';
 import 'package:ross_portfolio/features/about/widgets/web_experience_info_component.dart';
+
+import '../../../core/theme/dimen.dart';
 
 class WebMyExperienceComponent extends StatelessWidget {
   const WebMyExperienceComponent({super.key});
@@ -14,10 +15,9 @@ class WebMyExperienceComponent extends StatelessWidget {
         Expanded(
           child: Text(
             'MY EXPERIENCE',
-            style: GoogleFonts.oswald(
-              fontSize: 40,
-              color: Colors.white,
-            ),
+            style: TextThemes(context).displayMedium.copyWith(
+                fontWeight: TextWeights.weight900
+            )
           ),
         ),
         const SizedBox(width: 50),

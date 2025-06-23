@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 import 'package:ross_portfolio/features/about/widgets/mobile_my_experience_component.dart';
 import 'package:ross_portfolio/features/about/widgets/mobile_skill_showcase_component.dart';
 import 'package:ross_portfolio/features/about/widgets/my_skill_info.dart';
@@ -17,10 +17,9 @@ class MobileAboutPage extends StatelessWidget {
       children: [
         Text(
           'ABOUT ME',
-          style: GoogleFonts.oswald(
-            fontSize: 40,
-            color: Theme.of(context).colorScheme.primary,
-          ),
+          style: TextThemes(context).headlineLarge.copyWith(
+            fontWeight: TextWeights.weight900
+          )
         ),
         const SizedBox(height: 20),
         const MySkillInfo(),

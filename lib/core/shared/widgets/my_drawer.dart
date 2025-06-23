@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ross_portfolio/core/constants/string_constants.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -18,8 +19,8 @@ class MyDrawer extends StatelessWidget {
 
                   ),
                   const SizedBox(width: 20,),
-                  Text(name, style: Theme.of(context).textTheme.headlineSmall!.copyWith(
-                    color: Theme.of(context).colorScheme.secondary,
+                  Text(name, style: TextThemes(context).headlineSmall.copyWith(
+                    fontWeight: TextWeights.weight900
                   ),),
                 ],
               ),

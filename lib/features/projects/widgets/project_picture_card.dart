@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/constants/color_constants.dart';
 
 class ProjectPictureCard extends StatelessWidget {
   const ProjectPictureCard({super.key, required this.pictureUrl, required this.pictureCardHeight,});
@@ -14,7 +15,7 @@ class ProjectPictureCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        color: Theme.of(context).colorScheme.secondaryContainer,
+        color: offWhite
       ),
       child: Image.asset(pictureUrl),
     );

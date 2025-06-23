@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 import 'package:ross_portfolio/features/about/models/experience.dart';
 
 class MobileExperienceInfoComponent extends StatelessWidget {
@@ -11,38 +12,33 @@ class MobileExperienceInfoComponent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
-    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = TextThemes(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           experience.position,
-          style: textTheme.headlineSmall!.copyWith(
-            color: colorScheme.primary,
+          style: textTheme.headlineSmall.copyWith(
           ),
         ),
         const SizedBox(height: 10),
         if(experience.companyName != null)
           Text(
             experience.companyName!,
-            style: textTheme.bodyLarge!.copyWith(
-              color: colorScheme.primaryContainer,
+            style: textTheme.bodyLarge.copyWith(
             ),
           ),
         
         Text(
           experience.duration,
-          style: textTheme.bodyLarge!.copyWith(
-            color: colorScheme.secondary,
+          style: textTheme.bodyLarge.copyWith(
           ),
         ),
         const SizedBox(height: 20),
 
         Text(
           experience.description,
-          style: textTheme.bodyLarge!.copyWith(
-            color: colorScheme.secondary,
+          style: textTheme.bodyLarge.copyWith(
           ),
         ),
       ],

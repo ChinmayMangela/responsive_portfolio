@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 import 'package:ross_portfolio/features/home/widgets/contact_me_button.dart';
 import '../../../core/constants/string_constants.dart';
 import '../../../core/shared/widgets/social_buttons.dart';
@@ -9,21 +9,22 @@ class MyIntro extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final textTheme = TextThemes(context);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           'HI, I AM',
-          style: GoogleFonts.oswald(
-            fontSize: 40
-          ),
+          style: textTheme.headlineMedium.copyWith(
+            fontWeight: TextWeights.weight900
+          )
         ),
         Text(
             '$name.',
-          style: GoogleFonts.oswald(
-            fontSize: 40,
-          ),
+            style: textTheme.displayMedium.copyWith(
+                fontWeight: TextWeights.weight900
+            )
         ),
         const SizedBox(height: 10),
         _buildDescription(context),

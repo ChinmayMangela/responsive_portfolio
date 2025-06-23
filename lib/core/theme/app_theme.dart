@@ -7,10 +7,12 @@ import 'package:ross_portfolio/core/constants/color_constants.dart';
 class AppTheme {
 
   static ThemeData appTheme = ThemeData().copyWith(
-    scaffoldBackgroundColor: backgroundColor,
+    scaffoldBackgroundColor: white,
     textTheme: _textTheme,
     drawerTheme: _drawerTheme,
     appBarTheme: _appBarTheme,
+    iconTheme: _iconTheme,
+    listTileTheme: _listTileTheme,
   );
 
   static TextTheme get _textTheme => GoogleFonts.oswaldTextTheme(
@@ -22,9 +24,18 @@ class AppTheme {
   );
 
   static AppBarTheme get _appBarTheme => const AppBarTheme(
-    backgroundColor: backgroundColor,
+    backgroundColor: white,
     elevation: 0,
     centerTitle: false,
 
+  );
+
+  static IconThemeData get _iconTheme => const IconThemeData(
+    color: black
+  );
+
+  static ListTileThemeData get _listTileTheme => const ListTileThemeData(
+      iconColor: black,
+      textColor: black
   );
 }

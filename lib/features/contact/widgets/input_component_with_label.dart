@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 import '../../../core/shared/widgets/custom_textfield.dart';
 
 class InputComponentWithLabel extends StatelessWidget {
@@ -20,8 +21,8 @@ class InputComponentWithLabel extends StatelessWidget {
       children: [
         Text(
           label,
-          style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                color: Theme.of(context).colorScheme.primary,
+          style: TextThemes(context).bodySmall.copyWith(
+            fontWeight: TextWeights.weight700
               ),
         ),
         CustomTextField(

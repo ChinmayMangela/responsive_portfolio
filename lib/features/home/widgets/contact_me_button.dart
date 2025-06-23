@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/constants/color_constants.dart';
 
 class ContactMeButton extends StatelessWidget {
   const ContactMeButton({super.key});
@@ -12,7 +13,7 @@ class ContactMeButton extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: Theme.of(context).colorScheme.primaryContainer,
+          color: offWhite,
         ),
         child: const Row(
           mainAxisAlignment: MainAxisAlignment.center,

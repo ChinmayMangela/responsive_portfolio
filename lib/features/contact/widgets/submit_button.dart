@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/constants/color_constants.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 
 class SubmitButton extends StatelessWidget {
   const SubmitButton({
@@ -16,14 +18,14 @@ class SubmitButton extends StatelessWidget {
         width: MediaQuery.of(context).size.width * 0.2,
         height: 40,
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.primaryContainer,
+          color: black,
           borderRadius: BorderRadius.circular(10),
         ),
         child: Center(
           child: Text(
             'SUBMIT',
-            style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                  color: Theme.of(context).colorScheme.surface,
+            style: TextThemes(context).bodySmall.copyWith(
+                  color: white
                 ),
           ),
         ),

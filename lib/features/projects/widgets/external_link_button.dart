@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 
 class ExternalLinkButton extends StatelessWidget {
   const ExternalLinkButton({
@@ -14,7 +15,6 @@ class ExternalLinkButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = Theme.of(context).colorScheme;
     return InkWell(
       onTap: onPressed,
       child: Column(
@@ -23,14 +23,13 @@ class ExternalLinkButton extends StatelessWidget {
             children: [
               Text(
                 text,
-                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                      color: colorScheme.primaryContainer,
+                style: TextThemes(context).bodyLarge.copyWith(
+                      fontWeight: TextWeights.weight900
                     ),
               ),
               const SizedBox(width: 6),
               Icon(
                 icon,
-                color: colorScheme.primaryContainer,
               )
             ],
           ),

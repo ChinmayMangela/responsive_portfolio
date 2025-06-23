@@ -4,6 +4,7 @@ import 'package:ross_portfolio/features/projects/models/project.dart';
 import 'package:ross_portfolio/features/projects/widgets/external_link_button.dart';
 
 import '../../../core/shared/widgets/custom_divider.dart';
+import '../../../core/theme/dimen.dart';
 
 class ProjectContent extends StatelessWidget {
   const ProjectContent({
@@ -25,9 +26,9 @@ class ProjectContent extends StatelessWidget {
         const SizedBox(height: 55),
         Text(
           'PROJECT INFO',
-          style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                color: Theme.of(context).colorScheme.primary,
-              ),
+          style: TextThemes(context).bodyLarge.copyWith(
+            fontWeight: TextWeights.weight900
+          ),
         ),
         const SizedBox(height: 12),
         if (project.client != null)
@@ -73,8 +74,8 @@ class ProjectContent extends StatelessWidget {
   Widget _buildTitle(BuildContext context) {
     return Text(
       project.title,
-      style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-            color: Theme.of(context).colorScheme.primary,
+      style: TextThemes(context).headlineMedium.copyWith(
+            fontWeight: TextWeights.weight900
           ),
     );
   }
@@ -82,29 +83,26 @@ class ProjectContent extends StatelessWidget {
   Widget _buildDescription(BuildContext context) {
     return Text(
       project.description,
-      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+      style: TextThemes(context).bodyLarge.copyWith(
             color: Theme.of(context).colorScheme.secondary,
           ),
     );
   }
 
   Widget _buildInfoRow(String label, String value, BuildContext context) {
-    final textTheme = Theme.of(context).textTheme;
-    final colorScheme = Theme.of(context).colorScheme;
+    final textTheme = TextThemes(context);
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           label,
-          style: textTheme.bodyLarge!.copyWith(
-            color: colorScheme.primary,
+          style: textTheme.bodyLarge.copyWith(
           ),
         ),
         Text(
           value,
-          style: textTheme.bodyLarge!.copyWith(
-            color: colorScheme.secondary,
+          style: textTheme.bodyLarge.copyWith(
           ),
         )
       ],

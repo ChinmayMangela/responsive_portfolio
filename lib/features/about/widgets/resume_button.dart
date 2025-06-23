@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/constants/color_constants.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 
 class ResumeButton extends StatelessWidget {
   const ResumeButton({
@@ -16,14 +18,13 @@ class ResumeButton extends StatelessWidget {
         padding: const EdgeInsets.all(6),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
-          color: Theme.of(context).colorScheme.primaryContainer,
+          color: offWhite,
         ),
         child: Row(
           children: [
             Text(
               'DOWNLOAD RESUME',
-              style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                    color: Theme.of(context).colorScheme.surface,
+              style: TextThemes(context).bodyMedium.copyWith(
                 fontWeight: FontWeight.bold,
                   ),
             ),
@@ -32,12 +33,11 @@ class ResumeButton extends StatelessWidget {
               padding: const EdgeInsets.all(10),
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.black,
+                color: offWhite,
               ),
-              child: Center(
+              child: const Center(
                 child: Icon(
                   Icons.save_alt,
-                  color: Theme.of(context).colorScheme.secondary,
                 ),
               ),
             )

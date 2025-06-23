@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 import 'package:ross_portfolio/features/about/data/experience_data.dart';
 import 'package:ross_portfolio/features/about/widgets/mobile_experience_info_component.dart';
 
@@ -14,10 +14,9 @@ class MobileMyExperienceComponent extends StatelessWidget {
       children: [
         Text(
           'MY EXPERIENCE',
-          style: GoogleFonts.oswald(
-            fontSize: 40,
-            color: Colors.white,
-          ),
+          style: TextThemes(context).headlineLarge.copyWith(
+            fontWeight: TextWeights.weight900
+          )
         ),
         const SizedBox(height: 20),
         ...experienceList.map((experience) {

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ross_portfolio/core/constants/color_constants.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 
 class TechnologyCard extends StatelessWidget {
   const TechnologyCard({
@@ -14,15 +16,14 @@ class TechnologyCard extends StatelessWidget {
       margin: const EdgeInsets.all(7),
       padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
       decoration: BoxDecoration(
+        color: offWhite,
         borderRadius: BorderRadius.circular(23),
-        border: Border.all(
-          color: Theme.of(context).colorScheme.primaryContainer,
-        ),
+
       ),
       child: Text(
         name,
-        style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-              color: Theme.of(context).colorScheme.primary,
+        style: TextThemes(context).bodyMedium.copyWith(
+              fontWeight: TextWeights.weight700,
             ),
       ),
     );

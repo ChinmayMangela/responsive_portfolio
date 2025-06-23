@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:ross_portfolio/core/constants/string_constants.dart';
+import 'package:ross_portfolio/core/theme/dimen.dart';
 import 'package:ross_portfolio/features/projects/data/project_data.dart';
 import 'package:ross_portfolio/features/projects/widgets/web_project_card.dart';
 
@@ -12,17 +13,15 @@ class WebProjectsPage extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'FEATURED PROJECTS',
-          style: GoogleFonts.oswald(
-            fontSize: 30,
-            color: Theme.of(context).colorScheme.primary,
-          ),
+          projectSectionHeading.toUpperCase(),
+          style: TextThemes(context).displayMedium.copyWith(
+            fontWeight: TextWeights.weight900
+          )
         ),
         const SizedBox(height: 20),
         Text(
-          'Here are some of the selected projects that showcase my passion for front-end development',
+          projectSectionDescription,
           style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-            color: Theme.of(context).colorScheme.secondary,
           ),
         ),
         const SizedBox(height: 60),
