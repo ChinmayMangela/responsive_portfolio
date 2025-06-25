@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Portfolio extends StatelessWidget {
-  const Portfolio(
-      {super.key, required this.mobileScreen, required this.desktopScreen,});
+  const Portfolio({
+    super.key,
+    required this.mobileScreen,
+    required this.desktopScreen,
+  });
 
   final Widget mobileScreen;
   final Widget desktopScreen;
