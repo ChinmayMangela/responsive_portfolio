@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ross_portfolio/core/theme/dimen.dart';
+import 'package:ross_portfolio/core/shared/widgets/text_icon_button.dart';
 
 class ExternalLinkButton extends StatelessWidget {
   const ExternalLinkButton({
@@ -15,27 +15,10 @@ class ExternalLinkButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return TextIconButton(
+      text: text,
+      icon: icon,
       onTap: onPressed,
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Text(
-                text,
-                style: TextThemes(context).bodyLarge.copyWith(
-                      fontWeight: TextWeights.weight900
-                    ),
-              ),
-              const SizedBox(width: 6),
-              Icon(
-                icon,
-              )
-            ],
-          ),
-          const SizedBox(width: 10),
-        ],
-      ),
     );
   }
 }

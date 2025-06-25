@@ -12,7 +12,7 @@ class ButtonsRow extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          ResumeButton(onPressed: () {}),
+          const ResumeButton(),
           const SizedBox(width: 10),
           linkedInButton(),
           const SizedBox(width: 10),
